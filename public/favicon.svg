@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Background Gradient inspired by the deep blue sky and crisp atmosphere -->
+    <radialGradient id="bgGrad" cx="30%" cy="25%" r="85%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="50%" stop-color="#0e1e38"/>
+      <stop offset="100%" stop-color="#070c18"/>
+    </radialGradient>
+
+    <!-- Cyan/Teal Gradient inspired by Papa's vibrant checkered shirt -->
+    <linearGradient id="cyanTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="45%" stop-color="#00BBF9"/>
+      <stop offset="100%" stop-color="#0077B6"/>
+    </linearGradient>
+
+    <!-- Warm Golden / Terracotta Gradient inspired by the cathedral architecture -->
+    <linearGradient id="goldAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE49E"/>
+      <stop offset="40%" stop-color="#FDB813"/>
+      <stop offset="80%" stop-color="#F77F00"/>
+      <stop offset="100%" stop-color="#D62828"/>
+    </linearGradient>
+
+    <!-- Crown / Sparkle Glow -->
+    <radialGradient id="sparkleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#00BBF9" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0077B6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop Shadow for Dimensionality -->
+    <filter id="glowShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00F5D4" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#FDB813" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Squircle with Subtle Outer Glow -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Gradient Border Ring -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="none" stroke="url(#cyanTeal)" stroke-width="8" opacity="0.85"/>
+  <rect x="32" y="32" width="448" height="448" rx="104" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Background Aura -->
+  <circle cx="256" cy="240" r="150" fill="url(#sparkleGlow)"/>
+
+  <!-- Geometric Pattern Accent (subtle nod to checkered shirt structure) -->
+  <g opacity="0.08" stroke="#00F5D4" stroke-width="2">
+    <line x1="120" y1="60" x2="120" y2="452"/>
+    <line x1="188" y1="60" x2="188" y2="452"/>
+    <line x1="256" y1="60" x2="256" y2="452"/>
+    <line x1="324" y1="60" x2="324" y2="452"/>
+    <line x1="392" y1="60" x2="392" y2="452"/>
+    <line x1="60" y1="120" x2="452" y2="120"/>
+    <line x1="60" y1="188" x2="452" y2="188"/>
+    <line x1="60" y1="256" x2="452" y2="256"/>
+    <line x1="60" y1="324" x2="452" y2="324"/>
+    <line x1="60" y1="392" x2="452" y2="392"/>
+  </g>
+
+  <!-- Celebratory Birthday Crown & Gift Motif -->
+  <g filter="url(#glowShadow)">
+    <!-- Crown Base / Shield structure -->
+    <!-- Main Crown Peaks -->
+    <path d="M 120 310 L 140 180 L 205 240 L 256 140 L 307 240 L 372 180 L 392 310 Z" 
+          fill="url(#goldAmber)" 
+          stroke="#FFE49E" 
+          stroke-width="4" 
+          stroke-linejoin="round"/>
+    
+    <!-- Crown Headband Base with Cyan/Teal Jeweled Inlay -->
+    <path d="M 116 310 Q 256 335 396 310 L 392 345 Q 256 370 120 345 Z" 
+          fill="url(#cyanTeal)"/>
+    <path d="M 120 345 Q 256 370 392 345 L 388 358 Q 256 382 124 358 Z" 
+          fill="#005B8E" opacity="0.6"/>
+
+    <!-- Crown Jewels / Orbs -->
+    <circle cx="140" cy="175" r="14" fill="#FFFFFF" filter="url(#goldGlow)"/>
+    <circle cx="140" cy="175" r="10" fill="url(#cyanTeal)"/>
+
+    <circle cx="256" cy="132" r="18" fill="#FFFFFF" filter="url(#goldGlow)"/>
+    <circle cx="256" cy="132" r="13" fill="url(#goldAmber)"/>
+    
+    <circle cx="372" cy="175" r="14" fill="#FFFFFF" filter="url(#goldGlow)"/>
+    <circle cx="372" cy="175" r="10" fill="url(#cyanTeal)"/>
+
+    <!-- Headband Gems -->
+    <circle cx="180" cy="330" r="7" fill="#FFE49E"/>
+    <circle cx="256" cy="336" r="9" fill="#FFE49E"/>
+    <circle cx="332" cy="330" r="7" fill="#FFE49E"/>
+
+    <!-- Inner Facet Highlights -->
+    <path d="M 256 148 L 256 318" stroke="#FFF" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+    <polygon points="256,155 208,242 256,310" fill="#FFF" opacity="0.18"/>
+    <polygon points="256,155 304,242 256,310" fill="#000" opacity="0.12"/>
+  </g>
+
+  <!-- Celebratory Magic Sparkles (Top Right & Bottom Left) -->
+  <!-- Top Right Sparkle -->
+  <g transform="translate(390, 95) scale(0.9)" filter="url(#goldGlow)">
+    <path d="M 0 -28 Q 0 0 28 0 Q 0 0 0 28 Q 0 0 -28 0 Q 0 0 0 -28 Z" fill="#FFE49E"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Left Sparkle -->
+  <g transform="translate(95, 230) scale(0.65)" filter="url(#goldGlow)">
+    <path d="M 0 -28 Q 0 0 28 0 Q 0 0 0 28 Q 0 0 -28 0 Q 0 0 0 -28 Z" fill="#00F5D4"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Mini Star Sparkles -->
+  <circle cx="120" cy="110" r="4" fill="#FFE49E" opacity="0.8"/>
+  <circle cx="395" cy="270" r="3.5" fill="#00F5D4" opacity="0.9"/>
+  <circle cx="295" cy="90" r="2.5" fill="#FFFFFF" opacity="0.85"/>
+</svg>
