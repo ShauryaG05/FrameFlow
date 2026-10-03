@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes eq-wave-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+@keyframes eq-wave-2 {
+  0%, 100% { height: 14px; }
+  50% { height: 6px; }
+}
+@keyframes eq-wave-3 {
+  0%, 100% { height: 8px; }
+  50% { height: 18px; }
+}
+@keyframes eq-wave-4 {
+  0%, 100% { height: 12px; }
+  50% { height: 4px; }
+}
+
+.animate-eq-1 { animation: eq-wave-1 0.8s ease-in-out infinite; }
+.animate-eq-2 { animation: eq-wave-2 0.7s ease-in-out infinite 0.15s; }
+.animate-eq-3 { animation: eq-wave-3 0.9s ease-in-out infinite 0.3s; }
+.animate-eq-4 { animation: eq-wave-4 0.75s ease-in-out infinite 0.08s; }
+
+@keyframes music-toast-progress {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+.animate-toast-progress {
+  animation: music-toast-progress 5.5s linear forwards;
+}
+
+@keyframes gentle-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-8deg); }
+  75% { transform: rotate(8deg); }
+}
+
+.animate-wiggle {
+  animation: gentle-wiggle 1.2s ease-in-out infinite;
+}

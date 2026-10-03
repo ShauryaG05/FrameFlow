@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 
 .env
-src
+
 README.md
 node_modules
